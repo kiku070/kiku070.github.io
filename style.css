@@ -1,0 +1,46 @@
+
+body {
+    background-color: rgb(71, 82, 51);
+    color: rgb(0, 0, 0);
+    font-family: Georgia;
+  }
+
+  /*title*/
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/*main headings*/
+h2{
+  color:rgb(221, 221, 193);
+  background-color: rgb(108, 109, 77);
+  border: solid 3px rgb(61, 36, 6);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px
+}
+
+/*paragraphs*/
+p {
+  color:rgb(255, 255, 255);
+}
+
+/*links*/
+a:link, a:visited {
+  background-color: #7a9458;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px
+}
+
+a:hover, a:active {
+  background-color: rgb(133, 161, 88);
+}
+
+img {
+  color:rgb(34, 216, 80)
+}
