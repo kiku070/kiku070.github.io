@@ -9,15 +9,33 @@ body {
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
+  
+  text-shadow:
+  2px 2px 0 rgb(43, 58, 29),
+  -2px 2px 0 rgb(43, 58, 29),
+  -2px -2px 0 rgb(43, 58, 29),
+  2px -2px 0 rgb(43, 58, 29);
 }
 
 /*main headings*/
 h2{
-  color:rgb(221, 221, 193);
+  color:rgb(255, 255, 255);
   background-color: rgb(108, 109, 77);
-  border: solid 3px rgb(61, 36, 6);
+
+  border: solid 3px rgb(153, 145, 108);
+
+  outline-style: solid;
+  outline-color: rgb(61, 36, 6);
+
   padding: 10px;
   margin: 10px;
+
+  text-shadow:
+    1px 1px 0 rgb(61, 36, 6),
+    -1px 1px 0 rgb(61, 36, 6),
+    -1px -1px 0 rgb(61, 36, 6),
+    1px -1px 0 rgb(61, 36, 6);
+
   border-radius: 5px
 }
 
@@ -28,13 +46,35 @@ p {
 
 /*links*/
 a:link, a:visited {
-  background-color: #7a9458;
+  background-color: #7b8b4d;
   color: rgb(255, 255, 255);
-  padding: 15px 25px;
-  text-align: center;
+
+  font-weight: bold;
+  font-size: 20px;
+  font-style: oblique;
+
+  outline-color: rgb(43, 58, 29);
+  outline-style: solid;
+
+  padding: 10px 15px;
+
+  text-align: left;
   text-decoration: none;
+
   display: inline-block;
-  border-radius: 5px
+  border-radius: 5px;
+  border-color: rgb(181, 187, 127);
+  border-style: solid;
+
+  margin: 7px;
+
+  text-shadow:
+    1px 1px 0 rgb(43, 58, 29),
+    -1px 1px 0 rgb(43, 58, 29),
+    -1px -1px 0 rgb(43, 58, 29),
+    1px -1px 0 rgb(43, 58, 29);
+  
+
 }
 
 a:hover, a:active {
@@ -43,4 +83,123 @@ a:hover, a:active {
 
 img {
   color:rgb(34, 216, 80)
+}
+
+h3{
+  color:rgb(255, 255, 255);
+  margin-left: 40px;
+  text-decoration: underline;
+  font-size: 26px;
+
+  text-shadow:
+    2px 2px 0 rgb(43, 58, 29),
+    -2px 2px 0 rgb(43, 58, 29),
+    -2px -2px 0 rgb(43, 58, 29),
+    2px -2px 0 rgb(43, 58, 29);
+}
+
+ul{
+  list-style-type: disc;
+  color:rgb(255, 255, 255);
+  margin-left: 30px;
+}
+
+a.simple{
+  all:revert;
+  color:rgb(166, 243, 23);
+  margin: 20px;
+  font-size: 20px;
+}
+
+li.simple{
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+iframe{
+  margin: auto;
+  display: inline-block
+
+}
+
+  /* Style dropdown menus and submenus */
+  .dropdown, .submenu {
+    position: relative;
+    display: inline-block;
+    margin-left:10px
+  }
+
+/* Style the content dropdown list  */
+  .dropdown-content, .submenu-content {
+    display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: visible;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: rgb(79, 82, 61);
+  border-radius: 5px;
+  }
+
+/* Style the links within submenu list */
+  .dropdown-content a, .submenu-content a {
+    all:revert;
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+
+  .submenu-content {
+    left: 100%;
+    top: 0;
+  }
+/* Show submenu content on focus */
+  .dropdown:focus-within .dropdown-content,
+  .submenu:focus-within .submenu-content {
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content,.submenu:hover .submenu-content {
+  display: block;
+}
+
+.dropdown-content a:hover, .submenu-content a:hover, .dropdown:hover {
+  color: #faffe8;
+  background-color: #889263;
+  border-radius: 5px;
+}
+
+.dropdown a{
+  all:revert;
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+button{
+  border-radius: 5px;
+  padding:5px;
+  font-family: Georgia;
+  color:#ffffff;
+  background-color: #8b6f49;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #422b20;
+}
+
+.navbar {
+  position:relative;
+  z-index: 999;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(108, 109, 77);
 }
