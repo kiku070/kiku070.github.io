@@ -35,6 +35,7 @@ h2{
   background-color: rgb(138, 109, 47);
   padding: 10px;
   border-radius: 5px;
+  text-align: left;
 }
 
 /*paragraphs*/
@@ -108,7 +109,7 @@ iframe{
   .dropdown, .submenu {
     position: relative;
     display: inline-block;
-    margin-left:10px;
+    margin-left:0px;
     font-weight: bold;
   }
 
@@ -166,12 +167,13 @@ iframe{
 
 button{
   border-radius: 5px;
-  padding:5px;
+  padding:10px;
   font-family: Georgia;
-  background-color: #8b6f49;
+  background-color: #926f3e;
   font-weight: bold;
   border-style: solid;
-  border-color: #422b20;
+  border-color: #533114;
+  color:inherit;
 }
 
 .navbar {
