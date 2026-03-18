@@ -1,7 +1,7 @@
 
 body {
     background-color: rgb(97, 94, 50);
-    font-family: Georgia;
+    font-family: 'Figtree';
     color:rgb(255, 248, 190);
     border-color: rgb(255, 248, 190)
   }
@@ -9,9 +9,9 @@ body {
   .main{
     max-width: 1000px;
     height: 100%;
-    text-align: center;
+    text-align: left;
     margin:auto;
-    background-color: rgb(73, 67, 33);
+    background-color: rgb(90, 82, 41);
     padding: 10px;
     border-radius:5px;
 
@@ -21,13 +21,36 @@ body {
     text-align: left;
   }
 
+  .columns{
+    background-color: rgb(108, 97, 49);
+
+    border: 2px;
+    border-radius: 0.5em;
+    padding: 20px 10px;
+    width: 600px;
+
+    justify-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .columns > * {
+  padding: 10px;
+  border-radius: 0.5em;
+
+  margin: 0 10px;
+  flex: 1 1 200px;
+}
+
 hr{
   border-color: rgb(255, 248, 190);
 }
 
   /*title*/
 h1 {
-  text-align: center;
+  text-align: left;
+  padding: 5px;
 }
 
 /*main headings*/
@@ -41,9 +64,10 @@ h2{
 /*paragraphs*/
 p {
   color:rgb(255, 248, 190);
+  font-size: large;
 }
 
-/*links*/
+/*links. i named them "a" for some fucking reason*/
 a:link, a:visited {
   background-color: #7c772b;
   color:inherit;
@@ -68,6 +92,14 @@ a:hover, a:active {
   background-color: rgb(143, 134, 55);
 }
 
+a.simple{
+  all:revert;
+  color:rgb(166, 243, 23);
+  font-size: 20px;
+}
+
+
+
 img {
   color:rgb(34, 216, 80)
 }
@@ -88,12 +120,6 @@ li{
   margin-block-end: 10px;
 }
 
-a.simple{
-  all:revert;
-  color:rgb(166, 243, 23);
-  font-size: 20px;
-}
-
 li.simple{
   margin-bottom: 20px;
   margin-top: 20px
@@ -111,6 +137,7 @@ iframe{
     display: inline-block;
     margin-left:0px;
     font-weight: bold;
+    font-size: large;
   }
 
 /* Style the content dropdown list  */
@@ -168,7 +195,6 @@ iframe{
 button{
   border-radius: 5px;
   padding:10px;
-  font-family: Georgia;
   background-color: #926f3e;
   font-weight: bold;
   border-style: solid;
