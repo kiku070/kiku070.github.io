@@ -16,6 +16,7 @@ body {
     border-radius:5px;
 
   }
+  
 
   .container-left{
     text-align: left;
@@ -27,20 +28,24 @@ body {
     border: 2px;
     border-radius: 0.5em;
     padding: 20px 10px;
-    width: 600px;
+    max-width: max-content;
 
     justify-self: center;
 
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: space-around;
+
   }
 
   .columns > * {
   padding: 10px;
   border-radius: 0.5em;
+  
+  margin: 10px;
+  flex: 1 10 100px;
 
-  margin: 0 10px;
-  flex: 1 1 200px;
 }
 
 hr{
@@ -59,7 +64,10 @@ h2{
   padding: 10px;
   border-radius: 5px;
   text-align: left;
+  font-size: 25px;
 }
+
+
 
 /*paragraphs*/
 p {
@@ -73,7 +81,7 @@ a:link, a:visited {
   color:inherit;
 
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   font-style: oblique;
 
   padding: 10px 15px;
@@ -95,7 +103,7 @@ a:hover, a:active {
 a.simple{
   all:revert;
   color:rgb(166, 243, 23);
-  font-size: 20px;
+  font-size: 17px;
 }
 
 
@@ -107,13 +115,14 @@ img {
 h3{
   margin-left: 40px;
   text-decoration: underline;
-  font-size: 26px;
+  font-size: 25px;
   font-style: oblique;
 }
 
 ul{
   list-style-type: disc;
   margin-left: 35px;
+  margin-right: 40px;
 }
 
 li{
